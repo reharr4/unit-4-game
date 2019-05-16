@@ -3,14 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Crystal Collector</title>
-
-    <style type="text/css">
-        .crystal-image {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
 
 </head>
 
@@ -24,17 +19,18 @@
 
     <!-- js -->
     <!-- ===== -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript">
 
-        var targetNumber = Math.floor(Math.random() * 101) + 19;
-
-        $("#number-to-guess").text(targetNumber);
+        var targetNumber = [];
 
         var counter = 0;
 
         var numberOptions = [10, 5, 3, 7];
+
+        function randNumber() { }
+        targetNumber = Math.floor(Math.random() * 101) + 19;
+        $("#number-to-guess").text(targetNumber);
 
         for (var i = 0; i < numberOptions.length; i++) {
 
@@ -54,17 +50,18 @@
             $("#crystals").append(imageCrystal);
         }
 
-        function clear() {
-        $("#targetNumber").empty();
-        $("#number-to-guess").empty();
-        targetNumber = [];
-      }
 
-      function reset (){
-        clear();
-        targetNumber();
-        counter();
-      }
+        function clear() {
+            $("#targetNumber").empty();
+            $("#number-to-guess").empty();
+            targetNumber = [];
+        }
+
+        function reset() {
+            clear();
+            randNumber();
+            counter();
+        }
 
         $(".crystal-image").on("click", function () {
 
