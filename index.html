@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Crystal Collector</title>
@@ -29,8 +30,7 @@
         var numberOptions = [10, 5, 3, 7];
 
         function randNumber() { }
-        targetNumber = Math.floor(Math.random() * 101) + 19;
-        $("#number-to-guess").text(targetNumber);
+        
 
         for (var i = 0; i < numberOptions.length; i++) {
 
