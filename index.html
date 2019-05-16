@@ -3,90 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body class="background">
 
-    <h1>I see a number: <span id="number-to-guess"></span></h1>
+        <div class="container">
+            <div class="row">
+            <h1 class="header" style="text-align:center">Crystals Collector</h1>
+            </div>
+
+        <div class="row">
+            <div class="col-lg-6 instruction">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number generated. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game starts, the value of each crystal will change.</p>
+        </div>
+    </div>
 
     <!-- div is empty, to be filled dynamically -->
     <div id="crystals">
     </div>
 
-    <!-- js -->
-    <!-- ===== -->
 
-    <script type="text/javascript">
-
-        var targetNumber = [];
-
-        var counter = 0;
-
-        var numberOptions = [10, 5, 3, 7];
-
-        function randNumber() { }
-        
-
-        for (var i = 0; i < numberOptions.length; i++) {
-
-            // for each iteration, create imageCrystal
-            var imageCrystal = $("<img>");
-
-            // first, each crystal will be given class ".crystal-image". allows css to take effect
-            imageCrystal.addClass("crystal-image");
-
-            // each imageCrystal will be given src link to crystal image
-            imageCrystal.attr("src", "assets/images/rainbowquartz.jpg");
-
-            // each imageCrystal will be given data attribute called data-crystalValue. set equal to array value
-            imageCrystal.attr("data-crystalValue", numberOptions[i]);
-
-            // each crystal image (with all classes and attributes) will be added to page
-            $("#crystals").append(imageCrystal);
-        }
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 
-        function clear() {
-            $("#targetNumber").empty();
-            $("#number-to-guess").empty();
-            targetNumber = [];
-        }
-
-        function reset() {
-            clear();
-            randNumber();
-            counter();
-        }
-
-        $(".crystal-image").on("click", function () {
-
-            var crystalValue = ($(this).attr("data-crystalValue"));
-            crystalValue = parseInt(crystalValue);
-
-            // then add crystalValue to users counter (global variable)
-            // every click from crystal adds to global counter
-            counter += crystalValue;
-
-            // all of same game win-lose logic applies
-            alert("New score: " + counter);
-
-            if (counter === targetNumber) {
-                alert("You win!");
-                reset();
-            }
-
-            else if (counter >= targetNumber) {
-                alert("You lose!!");
-                reset();
-            }
-        });
-
-    </script>
 </body>
 
 </html>
