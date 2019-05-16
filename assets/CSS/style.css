@@ -1,4 +1,15 @@
-.crystal-image {
-    width: 300px;
-    height: 300px;
+.background {
+    background-image: url(../images/fortune-teller-with-crystal-ball.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+}
+
+.header {
+    background-color: cadetblue;
+    opacity: 0.6;
+}
+
+.instruction {
+    background-color: cadetblue;
+    opacity: 0.6;
 }
