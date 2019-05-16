@@ -28,7 +28,7 @@
 
     <script type="text/javascript">
 
-        var targetNumber = 53;
+        var targetNumber = Math.floor(Math.random() * 101) + 19;
 
         $("#number-to-guess").text(targetNumber);
 
@@ -63,6 +63,7 @@
       function reset (){
         clear();
         targetNumber();
+        counter();
       }
 
         $(".crystal-image").on("click", function () {
