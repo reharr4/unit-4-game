@@ -56,3 +56,8 @@ body {
     font-family: 'Oleo Script', cursive; 
     font-weight: bold;
 }
+
+img {
+    width: 50%;
+    height: 50%;
+}
