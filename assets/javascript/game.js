@@ -6,20 +6,19 @@ $(document).ready(function () {
     console.log("losses: " + losses);
     var score = 0;
     console.log("score: " + score);
-    var targetNumber = 0;
 
     targetNumber = Math.floor(Math.random() * 101) + 19;
     console.log("compPick: " + targetNumber);
     $(".targetNumber").html(targetNumber);
 
-    
-    for (var i = 0; i < crystals.length; i++) {
+
+    /*for (var i = 0; i < crystals.length; i++) {
         var imageCrystal = $("<img>");
         imageCrystal.addClass(".crystals");
         imageCrystal.attr("src", "assets/images/Gemstone-Clip-Art-1.png");
         imageCrystal.attr("data-crystalvalue", [i]);
         $(".crystals").append(imageCrystal);
-    }
+    }*/
 
     var names = document.getElementsByClassName(".crystals");
 
@@ -29,7 +28,7 @@ $(document).ready(function () {
 
     var crystalTwo = $("#img2").html("<img src='assets/images/Gemstone-Clip-Art-2.png'>");
 
-    var crystalThree = $("#img3").html("<img src='../assets/images/Gemstone-Clip-Art-8.png'>");
+    var crystalThree = $("#img3").html("<img src='assets/images/Gemstone-Clip-Art-8.png'>");
 
     var crystalFour = $("#img4").html("<img src='assets/images/Gemstone-Clip-Art-9.png'>");
 
