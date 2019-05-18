@@ -12,6 +12,8 @@ body {
     border: 2px solid black;
     font-family: 'Oleo Script', cursive;
     font-weight: bolder;
+    padding: 2%;
+    font-size: 70px;
 }
 
 .instruction {
