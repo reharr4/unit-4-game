@@ -1,65 +1,98 @@
 body {
     background-image: url(../images/fortune-teller-with-crystal-ball.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.header {
+
+h1,
+h2 {
+    justify-content: center;
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
     font-family: 'Oleo Script', cursive;
-    font-weight: bolder;
-    padding: 2%;
-    font-size: 70px;
+    text-align: center;
 }
 
 .instruction {
+    justify-content: center;
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
     font-family: 'Oleo Script', cursive;
+    text-align: center;
 }
 
-.targetNumber {
+.pointScore {
+    justify-content: center;
+}
+
+#points {
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
-    padding: 3%;
+    justify-content: center;
+}
+
+#orange {
+    width: 20%;
+    height: 25%;
+    align-content: center;
+}
+
+#blue {
+    width: 20%;
+    height: 25%;
+    align-content: center;
+}
+
+#yellow {
+    width: 20%;
+    height: 25%;
+    align-content: center;
+}
+
+#pink {
+    width: 20%;
+    height: 25%;
+    align-content: center;
+}
+
+#win {
+    background-color: cadetblue;
+    opacity: 0.6;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#loss {
+    background-color: cadetblue;
+    opacity: 0.6;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
     font-family: 'Oleo Script', cursive;
-    font-weight: bold;
-}
-
-.wins {
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
-    padding: 5%;
+    flex-direction: row;
+}
+
+#yourScore {
+    display: flex;
+    justify-content: center;
     font-family: 'Oleo Script', cursive;
-    font-weight: bold;
-}
-
-.losses {
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
-    padding: 5%;
-    font-family: 'Oleo Script', cursive;
-    font-weight: bold;
-}
-
-.newScore {
-    background-color: cadetblue;
-    opacity: 0.6;
-    border: 2px solid black;
-    padding: 3%;
-    font-family: 'Oleo Script', cursive; 
-    font-weight: bold;
-}
-
-img {
-    width: 50%;
-    height: 50%;
+    flex-direction: row;
 }
