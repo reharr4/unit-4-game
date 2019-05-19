@@ -5,10 +5,11 @@ var playerScore = 0;
 var winningScore;
 
 // random number to reach for a win
-function winningScore() {
+function makeWinningScore() {
     winningScore = Math.floor(Math.random() * 101) + 19;
     $("#points").text(winningScore);
     console.log(winningScore);
+
 }
 
 // random values for crystals
@@ -27,19 +28,19 @@ $("#orange").on("click", function () {
 });
 
 $("#blue").on("click", function () {
-    playerScore += oneValue;
+    playerScore += twoValue;
     winsLosses();
     $("#yourScore").text(playerScore);
 });
 
 $("#yellow").on("click", function () {
-    playerScore += oneValue;
+    playerScore += threeValue;
     winsLosses();
     $("#yourScore").text(playerScore);
 });
 
 $("#pink").on("click", function () {
-    playerScore += oneValue;
+    playerScore += fourValue;
     winsLosses();
     $("#yourScore").text(playerScore);
 });
@@ -63,11 +64,12 @@ function reset() {
     playerScore = 0;
     $("#yourScore").text(playerScore);
 
-    winningScore();
+    makeWinningScore();
     crystalValue();
 
     $("#win").text(wins);
     $("#loss").text(losses);
+
 }
 
 reset();
