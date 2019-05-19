@@ -3,25 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Collector</title>
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/CSS/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <h1 class="col-lg-6 header" style="text-align:center">Crystals Collector</h1>
+    <div class="game">
+        <div class="container">
+            <div class="row">
+                <h1>Crystals Collector</h1>
+            </div>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-6 instruction">
+    </div>
+
+        <div class="instruction">
+            <div class="container">
+
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
                     your total score.</p>
@@ -29,43 +31,47 @@
                     your total score goes above the random number.</p>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
                 <p>Each time the game starts, the value of each crystal will change.</p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-6 targetNumber">I See A Number...</div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3 total">
-                <div class="row wins">Wins: </div>
-                <div class="row losses">Losses: </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-lg-3 crystals">
-                <div id="img1"></div>
-            </div>
-            <div class="col-lg-3">
-                <div id="img2"></div>
-            </div>
-            <div class="col-lg-3">
-                <div id="img3"></div>
-            </div>
-            <div class="col-lg-3">
-                <div id="img4"></div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-lg-6 newScore">Your Score</div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
+            </div>
+        </div>
+        <br>
+
+        <div class="pointScore">
+            <div class="goal">
+                <h1 id="points"></h1>
+            </div>
+            <div class="winslosses">
+                <h2>
+                    Wins:
+                    <span id="win"></span>
+                </h2>
+                <h2>
+                    Losses:
+                    <span id="loss"></span>
+                </h2>
+            </div>
+
+
+
+        </div>
+        <br>
+
+        <div class="crystals">
+            <img id="orange" src="assets/images/Gemstone-Clip-Art-1.png" alt="orange">
+            <img id="blue" src="assets/images/Gemstone-Clip-Art-2.png" alt="blue">
+            <img id="yellow" src="assets/images/Gemstone-Clip-Art-8.png" alt="yellow">
+            <img id="pink" src="assets/images/Gemstone-Clip-Art-9.png" alt="pink">
+
+        </div>
+        <br>
+
+        <p id="score">
+            Your score:
+        </p>
+        <h1 id="yourScore"></h1>
 
 </body>
+
+<script src="assets/javascript/game.js"></script>
 
 </html>
