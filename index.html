@@ -13,62 +13,55 @@
 
 <body>
 
-    <div class="game">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
-                <h1>Crystals Collector</h1>
-            </div>
+            <h1 class="display-4">Crystals Collector</h1>
+            <p class="instruction">You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                your total score.</p>
+            <p>You win the game by matching your total score to the random number generated. You lose the game if
+                your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time the game starts, the value of each crystal will change.</p>
+
         </div>
     </div>
+    <br>
 
-        <div class="instruction">
-            <div class="container">
-
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your total score.</p>
-                <p>You win the game by matching your total score to the random number generated. You lose the game if
-                    your total score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time the game starts, the value of each crystal will change.</p>
-
-            </div>
+    <div class="pointScore">
+        <div class="goal">
+            <h1 id="points"></h1>
         </div>
-        <br>
-
-        <div class="pointScore">
-            <div class="goal">
-                <h1 id="points"></h1>
-            </div>
-            <div class="winslosses">
-                <h2>
-                    Wins:
-                    <span id="win"></span>
-                </h2>
-                <h2>
-                    Losses:
-                    <span id="loss"></span>
-                </h2>
-            </div>
-
-
-
+        <div class="winslosses">
+            <h2>
+                Wins:
+                <span id="win"></span>
+            </h2>
+            <h2>
+                Losses:
+                <span id="loss"></span>
+            </h2>
         </div>
-        <br>
 
-        <div class="crystals">
+
+
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-body">
             <img id="orange" src="assets/images/Gemstone-Clip-Art-1.png" alt="orange">
             <img id="blue" src="assets/images/Gemstone-Clip-Art-2.png" alt="blue">
             <img id="yellow" src="assets/images/Gemstone-Clip-Art-8.png" alt="yellow">
             <img id="pink" src="assets/images/Gemstone-Clip-Art-9.png" alt="pink">
-
         </div>
-        <br>
+    </div>
+    <br>
 
-        <p id="score">
-            Your score:
-        </p>
-        <h1 id="yourScore"></h1>
+    <p id="score">
+        Your score:
+    </p>
+    <h1 id="yourScore"></h1>
 
 </body>
 

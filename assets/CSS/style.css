@@ -5,17 +5,7 @@ body {
 }
 
 
-h1,
-h2 {
-    justify-content: center;
-    background-color: cadetblue;
-    opacity: 0.6;
-    border: 2px solid black;
-    font-family: 'Oleo Script', cursive;
-    text-align: center;
-}
-
-.instruction {
+.jumbotron {
     justify-content: center;
     background-color: cadetblue;
     opacity: 0.6;
@@ -35,27 +25,31 @@ h2 {
     justify-content: center;
 }
 
+.card-body {
+    align-content: center;
+}
+
 #orange {
-    width: 20%;
-    height: 25%;
+    width: 10%;
+    height: 15%;
     align-content: center;
 }
 
 #blue {
-    width: 20%;
-    height: 25%;
+    width: 10%;
+    height: 15%;
     align-content: center;
 }
 
 #yellow {
-    width: 20%;
-    height: 25%;
+    width: 10%;
+    height: 15%;
     align-content: center;
 }
 
 #pink {
-    width: 20%;
-    height: 25%;
+    width: 10%;
+    height: 15%;
     align-content: center;
 }
 
