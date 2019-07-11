@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/CSS/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 </head>
 
@@ -15,7 +20,7 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Crystals Collector</h1>
+            <h1>Crystals Collector</h1>
             <p class="instruction">You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
                 your total score.</p>
@@ -23,46 +28,53 @@
                 your total score goes above the random number.</p>
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time the game starts, the value of each crystal will change.</p>
-
         </div>
     </div>
-    <br>
 
-    <div class="pointScore">
-        <div class="goal">
-            <h1 id="points"></h1>
-        </div>
-        <div class="winslosses">
-            <h2>
-                Wins:
-                <span id="win"></span>
-            </h2>
-            <h2>
-                Losses:
-                <span id="loss"></span>
-            </h2>
-        </div>
-
-
-
-    </div>
-    <br>
-
-    <div class="card">
-        <div class="card-body">
-            <img id="orange" src="assets/images/Gemstone-Clip-Art-1.png" alt="orange">
-            <img id="blue" src="assets/images/Gemstone-Clip-Art-2.png" alt="blue">
-            <img id="yellow" src="assets/images/Gemstone-Clip-Art-8.png" alt="yellow">
-            <img id="pink" src="assets/images/Gemstone-Clip-Art-9.png" alt="pink">
+    <div class="container col-6">
+        <div class="pointScore">
+            <div class="goal">
+                <h2>
+                    Target:
+                    <span id="points"></span>
+                </h2>
+            </div>
+            <div class="winslosses">
+                <h2>
+                    Wins:
+                    <span id="win"></span>
+                </h2>
+                <h2>
+                    Losses:
+                    <span id="loss"></span>
+                </h2>
+            </div>
         </div>
     </div>
-    <br>
 
-    <p id="score">
-        Your score:
-    </p>
-    <h1 id="yourScore"></h1>
+    <div class="row">
+        <div class="crystals">
+            <div class="column col-md-3">
+                <img id="orange" src="assets/images/Gemstone-Clip-Art-1.png" alt="orange">
+            </div>
+            <div class="column col-md-3">
+                <img id="blue" src="assets/images/Gemstone-Clip-Art-2.png" alt="blue">
+            </div>
+            <div class="column col-md-3">
+                <img id="yellow" src="assets/images/Gemstone-Clip-Art-8.png" alt="yellow">
+            </div>
+            <div class="column col-md-3">
+                <img id="pink" src="assets/images/Gemstone-Clip-Art-9.png" alt="pink">
+            </div>
+        </div>
+    </div>
 
+    <div class="container col-6">
+        <h2>
+            Your Score:
+            <span id="yourScore"></span>
+        </h2>
+    </div>
 </body>
 
 <script src="assets/javascript/game.js"></script>

@@ -2,9 +2,8 @@ body {
     background-image: url(../images/fortune-teller-with-crystal-ball.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
-
-
 .jumbotron {
     justify-content: center;
     background-color: cadetblue;
@@ -13,46 +12,56 @@ body {
     font-family: 'Oleo Script', cursive;
     text-align: center;
 }
-
 .pointScore {
     justify-content: center;
+    align-items: center;
 }
-
 #points {
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
 }
-
-.card-body {
+.crystals {
     align-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
+.column {
+    float: left;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 #orange {
-    width: 10%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
     align-content: center;
 }
-
 #blue {
-    width: 10%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
     align-content: center;
 }
-
 #yellow {
-    width: 10%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
     align-content: center;
 }
-
 #pink {
-    width: 10%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
     align-content: center;
 }
-
 #win {
     background-color: cadetblue;
     opacity: 0.6;
@@ -60,8 +69,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
 }
-
 #loss {
     background-color: cadetblue;
     opacity: 0.6;
@@ -69,24 +79,63 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#score {
-    display: flex;
-    justify-content: center;
+    font-size: 50px;
     font-family: 'Oleo Script', cursive;
-    background-color: cadetblue;
-    opacity: 0.6;
-    border: 2px solid black;
-    flex-direction: row;
 }
-
 #yourScore {
-    display: flex;
-    justify-content: center;
-    font-family: 'Oleo Script', cursive;
     background-color: cadetblue;
     opacity: 0.6;
     border: 2px solid black;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
+}
+h2 {
+    color:black;
+}
+
+/* media queries */
+/* cell phone screens */
+@media (max-width: 600px) {
+    #orange, #yellow, #blue, #pink {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* tablets */
+@media (min-width: 600px) {
+    #orange, #yellow, #blue, #pink {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* large devices */
+@media (min-width: 992px) {
+    #orange, #yellow, #blue, #pink {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* extra large devices */
+@media (min-width: 1200px) {
+    #orange, #yellow, #blue, #pink {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
